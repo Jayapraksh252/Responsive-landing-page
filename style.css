@@ -1,0 +1,99 @@
+/* CSS (styles.css) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: rgb(174, 99, 0);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(210, 2, 203, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+
+.hero {
+    text-align: center;
+    background: #8fbcec;
+    color: rgb(180, 113, 113);
+    padding: 5rem 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: rgb(62, 0, 0);
+    color: #689dd6;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.features {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-item {
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ff9191;
+    color: rgb(102, 92, 92);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
